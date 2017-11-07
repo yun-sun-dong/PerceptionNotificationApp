@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,29 +11,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
-                Intent intent1 = new Intent(getApplicationContext(),TimeChart.class);
-                startActivity(intent1);
-            }
-        });
-
-        Button button2 = (Button) findViewById(R.id.button2);
-        button.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
-                Intent intent2 = new Intent(getApplicationContext(),Notification.class);
-                startActivity(intent2);
-            }
-        });
-
-        Button button3 = (Button) findViewById(R.id.button3);
-        button.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
-                Intent intent3 = new Intent(getApplicationContext(),Messges.class);
-                startActivity(intent3);
-            }
-        });
     }
+
+    public void onButton1Clicked(View v){
+        Intent intent1 = new Intent(getApplicationContext(),TimeChart.class);
+        startActivity(intent1);
+    }
+
+    public void onButton2Clicked(View v){
+        Intent intent2 = new Intent(getApplicationContext(),Notification.class);
+        startActivity(intent2);
+    }
+
+    public void onButton3Clicked(View v){
+        Intent intent3 = new Intent(getApplicationContext(),Messges.class);
+        startActivity(intent3);
+    }
+
 }

@@ -10,6 +10,5 @@ public class Messges extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.message);
 
-
     }
 }

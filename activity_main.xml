@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_weight="0.34"
+        android:onClick="onButton1Clicked"
         android:text="시간표" />
 
     <Button
@@ -30,6 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_weight="0.33"
+        android:onClick="onButton2Clicked"
         android:text="타이머" />
 
     <Button
@@ -38,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_weight="0.32"
+        android:onClick="onButton3Clicked"
         android:text="문자설정" />
 
 </LinearLayout>
